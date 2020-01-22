@@ -1,0 +1,12 @@
+<h1>Search user</h1>
+{{#if error}} <span>{{error}}</span>{{/if}}
+<form class="form-inline" method="POST" action="/user/search">
+	<div class="form-group">
+		<input type="text" name="id" class="form-conrol" placeholder="Search user by id">
+		<span style="margin-left: 4px"><input type="submit" class="btn btn-primary" value="search"></span>
+		
+	</div>
+</form>
+<script type="text/javascript">
+	console.log("{{data.id}}")
+</script>
